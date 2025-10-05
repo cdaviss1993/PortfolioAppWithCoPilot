@@ -1,0 +1,108 @@
+<!-- ...existing code... -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>My First Web Appliction using Microsoft Copilot</title>
+</head>
+
+<body>
+    <header role="banner">
+        <h1>My First Web Application using Microsoft Copilot</h1>
+
+        <!-- accessible hamburger for small screens -->
+        <button id="hamburger-icon"
+                class="hamburger"
+                aria-label="Toggle navigation"
+                aria-controls="nav-menu"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <!-- add id="nav-menu" so CSS/JS can toggle visibility -->
+        <nav id="nav-menu" role="navigation" aria-label="Main navigation">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <section id="about" role="region" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Me</h2>
+            <p>This page is for practicing semantic HTML with GitHub Copilot.</p>
+        </section>
+
+        <section id="projects" role="region" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects</h2>
+
+            <article role="article">
+                <figure>
+                    <img src="https://via.placeholder.com/150" alt="Screenshot of Semantic HTML Structure project">
+                    <figcaption>Project 1: Semantic HTML Structure</figcaption>
+                </figure>
+                <p>Built a web page using semantic HTML elements to improve accessibility and SEO.</p>
+            </article>
+
+            <article role="article">
+                <figure>
+                    <img src="https://via.placeholder.com/150" alt="Screenshot of Accessible Navigation project">
+                    <figcaption>Project 2: Accessible Navigation</figcaption>
+                </figure>
+                <p>Implemented keyboard-friendly navigation and ARIA roles for better accessibility.</p>
+            </article>
+
+            <article role="article">
+                <figure>
+                    <img src="https://via.placeholder.com/150" alt="Screenshot of Responsive Design project">
+                    <figcaption>Project 3: Responsive Design</figcaption>
+                </figure>
+                <p>Created layouts that adapt to different screen sizes using CSS media queries.</p>
+            </article>
+        </section>
+
+        <section id="skills" role="region" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+
+        <section id="contact" role="region" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact</h2>
+            <form id="contact-form" role="form" aria-label="Contact form" action="#" method="post" autocomplete="on">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <br>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2024 CoPilot Practice. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
+<!-- ...existing code... -->
